@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap-reboot.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Вход</title>
+</head>
+<body>
+  <section class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6 d-flex flex-column justify-content-between">
+        <div class="d-flex flex-column">
+          <h1>Добро пожаловать!</h1>
+          <p class="text-3">Заполните данные ниже, чтобы зарегистрироваться в системе</p>
+        </div>
+        <form class="needs-validation mt-5" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="firstName" placeholder="Логин" required />
+            </div>
+
+            <div class="col-sm-12">
+              <input type="password" class="form-control" id="lastName" placeholder="Пароль" required />
+            </div>
+          </div>
+        </form>
+        <button class="w-100 button" type="submit">
+          Зарегистрироваться
+        </button>
+        <div class="btns-reg d-flex align-items-center justify-content-between mt-3">
+          <a href="/sign-in.html">Еще не зарегистрированы?</a>
+          <a href="/reset-password.html">Забыли пароль?</a>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-xxl-0 mt-xl-0 mt-lg-0 mt-3">
+        <img class="w-100 rounded-5" src="./img/img-sign.png" />
+      </div>
+    </div>
+  </section>
+</body>
+</html>
