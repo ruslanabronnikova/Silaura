@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  height: 100%;
 }
 
 .row {
@@ -151,6 +152,17 @@ h4 {
 .button-out:hover {
   background-color: var(--color-var-btn-primary);
   color: white;
+}
+
+.counterButton {
+  background-color: transparent;
+  color: var(--color-var-btn-primary);
+  border: 1px solid var(--color-var-btn-primary);
+  padding: 10px 20px;
+  height: 45px;
+  font-size: 14px;
+  transition: all .2s;
+  border-radius: 50px;
 }
 
 .navbar-btns {
@@ -319,10 +331,18 @@ h4 {
 }
 
 .form-control {
-  border: 1px solid var(--color-var-btn-primary);
-  background-color: transparent;
+  border: 1px solid var(--color-var-light);
+  background-color: var(--color-var-back-block);
   border-radius: 200px;
   border-left: none;
+  height: 50px;
+  padding-left: 30px;
+}
+
+.form-control:focus {
+  border-color: var(--color-var-btn-primary);
+  outline: none !important;
+  box-shadow: 0 0 10px 1px var(--color-var-btn-primary);
 }
 
 .filters {
@@ -337,6 +357,16 @@ h4 {
 .button-dropdown {
   color: var(--color-var-title-primary);
   font-size: 14px;
+}
+
+.img-zoom {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.img-zoom:hover {
+  transform: scale(1.2); 
+  
 }
 
 /* ACCORDEON */

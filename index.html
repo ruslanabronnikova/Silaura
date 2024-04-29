@@ -129,7 +129,7 @@
             <img class="btn-save" src="/img/Icon/heart-outline.svg" />
           </a>
           <div class="d-flex justify-content-center">
-            <img class="img-product w-100" src="/img/product/one.png" />
+            <img class="img-product w-100 img-zoom" src="/img/product/one.png" />
           </div>
           <div class="card-info">
             <h4>1-й центр</h4>
@@ -138,7 +138,16 @@
               <p class="text-1">1300₽</p>
             </div>
           </div>
-          <button class="button w-100 mt-2">Оформить</button>
+
+          <div id="buttonContainer" class="d-none d-md-flex justify-content-center mt-2">
+            <button id="mainButton" class="button w-100">Оформить заказ</button>
+
+            <div id="counterButton" class="counterButton d-none justify-content-between align-items-center">
+              <a id="decrement" class="decreaseButton">-</a>
+              <span id="counterValue" class="counter">1</span>
+              <a id="increment" class="increaseButton">+</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -148,7 +157,7 @@
             <img class="btn-save" src="/img/Icon/heart-outline.svg" />
           </a>
           <div class="d-flex justify-content-center">
-            <img class="img-product w-100" src="/img/product/one.png" />
+            <img class="img-product w-100 img-zoom" src="/img/product/one.png" />
           </div>
           <div class="card-info">
             <h4>1-й центр</h4>
@@ -497,6 +506,30 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Функция для обработки события клика на кнопке "Оформить заказ"
+    function handleClick() {
+
+      counterButton.style.display = 'block';
+
+      // Создаем первую кнопку "Оформить заказ"
+      const orderButton = document.createElement('button');
+      orderButton.classList.add('button', 'w-48', 'mr-2');
+      orderButton.textContent = 'Оформить заказ';
+      buttonContainer.appendChild(orderButton);
+      
+      // Скрываем основную кнопку
+      mainButton.style.display = 'none';
+    }
+    
+    // Находим кнопку "Оформить заказ", контейнер для кнопок и основную кнопку
+    const mainButton = document.getElementById('mainButton');
+    const buttonContainer = document.getElementById('buttonContainer');
+    
+    // Назначаем обработчик события клика на основную кнопку
+    mainButton.addEventListener('click', handleClick);
+  </script>
 </body>
 
 </html>
