@@ -158,11 +158,39 @@ h4 {
   background-color: transparent;
   color: var(--color-var-btn-primary);
   border: 1px solid var(--color-var-btn-primary);
-  padding: 10px 20px;
-  height: 45px;
+  padding: 10px 40px;
+  height: 50px;
   font-size: 14px;
   transition: all .2s;
   border-radius: 50px;
+  display: flex;
+  gap: 5px;
+}
+
+.buttonContainer {
+  gap: 10px;
+}
+
+.btn-save {
+  background-color: var(--color-var-btn-primary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.img-save {
+  width: 18px;
 }
 
 .navbar-btns {
@@ -194,19 +222,36 @@ h4 {
   color: var(--color-var-title-primary);
 }
 
+.container-slider {
+  display: flex;
+  position: relative;
+}
+
+.info-img {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 20px;
+}
+
 .container-card {
   background-color: var(--color-var-back-block);
   padding: 25px 20px;
   border-radius: 20px;
+  position: relative;
 }
 
 .card-advant {
   background-color: #CDC2EC;
   display: flex;
   padding: 60px 100px;
-  border-radius: 30px;
+  border-radius: 30px; /* Закругление всех углов основной фигуры */
   height: 400px;
   justify-content: space-between;
+  position: relative;
 }
 
 .card-advant:nth-last-of-type(2) {
@@ -219,6 +264,13 @@ h4 {
 
 .card-advant p {
   width: 630px;
+}
+
+.substances-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: inside;
 }
 
 .img-product {
@@ -240,7 +292,7 @@ h4 {
 }
 
 .card-using p {
-  margin-top: 90px;
+  margin-top: 70px;
 }
 
 .result-card {
@@ -299,6 +351,25 @@ h4 {
   margin-right: 20px;
 }
 
+.rating {
+  gap: 5px;
+}
+
+.rating img {
+  margin: 0;
+}
+
+.rating svg {
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.rating svg.active path {
+  fill: #D8C30B; /* Цвет активной звезды */
+}
+
+
 /* CATALOG */
 .breadcrumbs {
   background-color: #CDC2EC;
@@ -321,7 +392,7 @@ h4 {
 
 .input-group-text {
   border: 1px solid var(--color-var-btn-primary);
-  background-color: transparent;
+  background-color: var(--color-var-back-block);
   border-radius: 200px;
   border-right: none;
 }
@@ -342,7 +413,7 @@ h4 {
 .form-control:focus {
   border-color: var(--color-var-btn-primary);
   outline: none !important;
-  box-shadow: 0 0 10px 1px var(--color-var-btn-primary);
+  box-shadow: none !important;
 }
 
 .filters {
@@ -352,6 +423,7 @@ h4 {
 .dropdown {
   border: 1px solid var(--color-var-btn-primary);
   border-radius: 200px;
+  display: flex;
 }
 
 .button-dropdown {
