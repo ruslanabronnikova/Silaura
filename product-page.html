@@ -1,11 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="/css/bootstrap-reboot.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/swiper.min.css" />
+  <title>Товар</title>
 </head>
+
 <body>
-  
+  <nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand" href="/"><img src="./img/logo.svg" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+      aria-controls="staticBackdrop" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Продукция</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Применение
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Статьи </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Отзывы </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-btns mb-0 me-auto d-flex">
+        <li class="btn-item">
+          <img src="./img/Icon/heart-outline.svg" alt="Иконка сердце" />
+          <div class="btn-counter">
+            <p>0</p>
+          </div>
+        </li>
+        <li class="btn-item">
+          <img src="./img/Icon/cart.svg" alt="Иконка корзины" />
+          <div class="btn-counter">
+            <p>0</p>
+          </div>
+        </li>
+      </ul>
+
+      <button class="button-out" onclick="window.open('/sign-in.html', '_blank');">
+        Войти/Зарегистрироваться
+      </button>
+    </div>
+  </nav>
+
+  <section class="container mt-5">
+    <div class="breadcrumbs d-flex justify-content-between align-items-end">
+      <div class="d-flex justify-content-between flex-column">
+        <h3>Каталог продукции</h3>
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Библиотека
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <img src="./img/hand-bread.png" />
+    </div>
+  </section>
+
+  <section class="container mt-5">
+    <div class="row">
+      <div class="container-img-product col-xxl-6 col-xl-6 col-lg-6 col-md-12">
+        <button class="btn-save">
+          <img class="img-save" src="/img/Icon/heart-outline.svg" />
+        </button>
+        <img class="img-zoom" src="/img/product/one.png" />
+      </div>
+
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 d-flex justify-content-between flex-column">
+        <div class="d-flex flex-column">
+          <h2>1-й центр</h2>
+          <div class="d-flex flex-column">
+            <p class="text-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.</p>
+            <p class="text-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.</p>
+            <div class="d-flex justify-content-between">
+              <p class="text-2">Артикул: 000</p>
+              <p class="text-2">Отзывов: 0</p>
+            </div>
+            <div class="d-flex justify-content-end">
+              <div class="d-flex rating mb-2">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.7784 3.34921C8.95417 2.95486 9.04209 2.75769 9.16448 2.69697C9.27078 2.64422 9.3956 2.64422 9.5019 2.69697C9.62429 2.75769 9.71221 2.95486 9.88798 3.34921L11.2881 6.49021C11.3401 6.60679 11.366 6.66508 11.4063 6.70971C11.4418 6.74921 11.4853 6.7808 11.5338 6.80243C11.5887 6.82687 11.6522 6.83357 11.7791 6.84696L15.1991 7.20792C15.6284 7.25324 15.8431 7.27589 15.9387 7.37353C16.0217 7.45833 16.0602 7.57708 16.0429 7.69449C16.023 7.82964 15.8627 7.97412 15.542 8.26317L12.9873 10.5654C12.8925 10.6508 12.8451 10.6936 12.8151 10.7456C12.7885 10.7917 12.7719 10.8428 12.7663 10.8956C12.76 10.9554 12.7732 11.0178 12.7997 11.1427L13.5133 14.5067C13.6029 14.9291 13.6477 15.1402 13.5844 15.2613C13.5293 15.3665 13.4283 15.4398 13.3113 15.4597C13.1766 15.4824 12.9896 15.3746 12.6156 15.1589L9.63667 13.4407C9.52612 13.3769 9.47084 13.3451 9.41208 13.3326C9.36007 13.3216 9.30631 13.3216 9.2543 13.3326C9.19554 13.3451 9.14026 13.3769 9.02972 13.4407L6.05078 15.1589C5.67678 15.3746 5.48978 15.4824 5.35508 15.4597C5.23807 15.4398 5.13706 15.3665 5.08206 15.2613C5.01875 15.1402 5.06353 14.9291 5.15312 14.5067L5.86664 11.1427C5.89312 11.0178 5.90637 10.9554 5.90008 10.8956C5.89451 10.8428 5.87791 10.7917 5.85133 10.7456C5.82131 10.6936 5.7739 10.6508 5.67909 10.5654L3.12447 8.26317C2.80375 7.97412 2.64339 7.82964 2.62345 7.69449C2.60614 7.57708 2.64472 7.45833 2.72773 7.37353C2.82331 7.27589 3.03799 7.25324 3.46735 7.20792L6.88728 6.84696C7.01421 6.83357 7.07767 6.82687 7.13255 6.80243C7.1811 6.7808 7.22458 6.74921 7.26015 6.70971C7.30036 6.66508 7.32634 6.60679 7.37831 6.49021L8.7784 3.34921Z"
+                    stroke="#D8C30B" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.7784 3.34921C8.95417 2.95486 9.04209 2.75769 9.16448 2.69697C9.27078 2.64422 9.3956 2.64422 9.5019 2.69697C9.62429 2.75769 9.71221 2.95486 9.88798 3.34921L11.2881 6.49021C11.3401 6.60679 11.366 6.66508 11.4063 6.70971C11.4418 6.74921 11.4853 6.7808 11.5338 6.80243C11.5887 6.82687 11.6522 6.83357 11.7791 6.84696L15.1991 7.20792C15.6284 7.25324 15.8431 7.27589 15.9387 7.37353C16.0217 7.45833 16.0602 7.57708 16.0429 7.69449C16.023 7.82964 15.8627 7.97412 15.542 8.26317L12.9873 10.5654C12.8925 10.6508 12.8451 10.6936 12.8151 10.7456C12.7885 10.7917 12.7719 10.8428 12.7663 10.8956C12.76 10.9554 12.7732 11.0178 12.7997 11.1427L13.5133 14.5067C13.6029 14.9291 13.6477 15.1402 13.5844 15.2613C13.5293 15.3665 13.4283 15.4398 13.3113 15.4597C13.1766 15.4824 12.9896 15.3746 12.6156 15.1589L9.63667 13.4407C9.52612 13.3769 9.47084 13.3451 9.41208 13.3326C9.36007 13.3216 9.30631 13.3216 9.2543 13.3326C9.19554 13.3451 9.14026 13.3769 9.02972 13.4407L6.05078 15.1589C5.67678 15.3746 5.48978 15.4824 5.35508 15.4597C5.23807 15.4398 5.13706 15.3665 5.08206 15.2613C5.01875 15.1402 5.06353 14.9291 5.15312 14.5067L5.86664 11.1427C5.89312 11.0178 5.90637 10.9554 5.90008 10.8956C5.89451 10.8428 5.87791 10.7917 5.85133 10.7456C5.82131 10.6936 5.7739 10.6508 5.67909 10.5654L3.12447 8.26317C2.80375 7.97412 2.64339 7.82964 2.62345 7.69449C2.60614 7.57708 2.64472 7.45833 2.72773 7.37353C2.82331 7.27589 3.03799 7.25324 3.46735 7.20792L6.88728 6.84696C7.01421 6.83357 7.07767 6.82687 7.13255 6.80243C7.1811 6.7808 7.22458 6.74921 7.26015 6.70971C7.30036 6.66508 7.32634 6.60679 7.37831 6.49021L8.7784 3.34921Z"
+                    stroke="#D8C30B" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.7784 3.34921C8.95417 2.95486 9.04209 2.75769 9.16448 2.69697C9.27078 2.64422 9.3956 2.64422 9.5019 2.69697C9.62429 2.75769 9.71221 2.95486 9.88798 3.34921L11.2881 6.49021C11.3401 6.60679 11.366 6.66508 11.4063 6.70971C11.4418 6.74921 11.4853 6.7808 11.5338 6.80243C11.5887 6.82687 11.6522 6.83357 11.7791 6.84696L15.1991 7.20792C15.6284 7.25324 15.8431 7.27589 15.9387 7.37353C16.0217 7.45833 16.0602 7.57708 16.0429 7.69449C16.023 7.82964 15.8627 7.97412 15.542 8.26317L12.9873 10.5654C12.8925 10.6508 12.8451 10.6936 12.8151 10.7456C12.7885 10.7917 12.7719 10.8428 12.7663 10.8956C12.76 10.9554 12.7732 11.0178 12.7997 11.1427L13.5133 14.5067C13.6029 14.9291 13.6477 15.1402 13.5844 15.2613C13.5293 15.3665 13.4283 15.4398 13.3113 15.4597C13.1766 15.4824 12.9896 15.3746 12.6156 15.1589L9.63667 13.4407C9.52612 13.3769 9.47084 13.3451 9.41208 13.3326C9.36007 13.3216 9.30631 13.3216 9.2543 13.3326C9.19554 13.3451 9.14026 13.3769 9.02972 13.4407L6.05078 15.1589C5.67678 15.3746 5.48978 15.4824 5.35508 15.4597C5.23807 15.4398 5.13706 15.3665 5.08206 15.2613C5.01875 15.1402 5.06353 14.9291 5.15312 14.5067L5.86664 11.1427C5.89312 11.0178 5.90637 10.9554 5.90008 10.8956C5.89451 10.8428 5.87791 10.7917 5.85133 10.7456C5.82131 10.6936 5.7739 10.6508 5.67909 10.5654L3.12447 8.26317C2.80375 7.97412 2.64339 7.82964 2.62345 7.69449C2.60614 7.57708 2.64472 7.45833 2.72773 7.37353C2.82331 7.27589 3.03799 7.25324 3.46735 7.20792L6.88728 6.84696C7.01421 6.83357 7.07767 6.82687 7.13255 6.80243C7.1811 6.7808 7.22458 6.74921 7.26015 6.70971C7.30036 6.66508 7.32634 6.60679 7.37831 6.49021L8.7784 3.34921Z"
+                    stroke="#D8C30B" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.7784 3.34921C8.95417 2.95486 9.04209 2.75769 9.16448 2.69697C9.27078 2.64422 9.3956 2.64422 9.5019 2.69697C9.62429 2.75769 9.71221 2.95486 9.88798 3.34921L11.2881 6.49021C11.3401 6.60679 11.366 6.66508 11.4063 6.70971C11.4418 6.74921 11.4853 6.7808 11.5338 6.80243C11.5887 6.82687 11.6522 6.83357 11.7791 6.84696L15.1991 7.20792C15.6284 7.25324 15.8431 7.27589 15.9387 7.37353C16.0217 7.45833 16.0602 7.57708 16.0429 7.69449C16.023 7.82964 15.8627 7.97412 15.542 8.26317L12.9873 10.5654C12.8925 10.6508 12.8451 10.6936 12.8151 10.7456C12.7885 10.7917 12.7719 10.8428 12.7663 10.8956C12.76 10.9554 12.7732 11.0178 12.7997 11.1427L13.5133 14.5067C13.6029 14.9291 13.6477 15.1402 13.5844 15.2613C13.5293 15.3665 13.4283 15.4398 13.3113 15.4597C13.1766 15.4824 12.9896 15.3746 12.6156 15.1589L9.63667 13.4407C9.52612 13.3769 9.47084 13.3451 9.41208 13.3326C9.36007 13.3216 9.30631 13.3216 9.2543 13.3326C9.19554 13.3451 9.14026 13.3769 9.02972 13.4407L6.05078 15.1589C5.67678 15.3746 5.48978 15.4824 5.35508 15.4597C5.23807 15.4398 5.13706 15.3665 5.08206 15.2613C5.01875 15.1402 5.06353 14.9291 5.15312 14.5067L5.86664 11.1427C5.89312 11.0178 5.90637 10.9554 5.90008 10.8956C5.89451 10.8428 5.87791 10.7917 5.85133 10.7456C5.82131 10.6936 5.7739 10.6508 5.67909 10.5654L3.12447 8.26317C2.80375 7.97412 2.64339 7.82964 2.62345 7.69449C2.60614 7.57708 2.64472 7.45833 2.72773 7.37353C2.82331 7.27589 3.03799 7.25324 3.46735 7.20792L6.88728 6.84696C7.01421 6.83357 7.07767 6.82687 7.13255 6.80243C7.1811 6.7808 7.22458 6.74921 7.26015 6.70971C7.30036 6.66508 7.32634 6.60679 7.37831 6.49021L8.7784 3.34921Z"
+                    stroke="#D8C30B" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.7784 3.34921C8.95417 2.95486 9.04209 2.75769 9.16448 2.69697C9.27078 2.64422 9.3956 2.64422 9.5019 2.69697C9.62429 2.75769 9.71221 2.95486 9.88798 3.34921L11.2881 6.49021C11.3401 6.60679 11.366 6.66508 11.4063 6.70971C11.4418 6.74921 11.4853 6.7808 11.5338 6.80243C11.5887 6.82687 11.6522 6.83357 11.7791 6.84696L15.1991 7.20792C15.6284 7.25324 15.8431 7.27589 15.9387 7.37353C16.0217 7.45833 16.0602 7.57708 16.0429 7.69449C16.023 7.82964 15.8627 7.97412 15.542 8.26317L12.9873 10.5654C12.8925 10.6508 12.8451 10.6936 12.8151 10.7456C12.7885 10.7917 12.7719 10.8428 12.7663 10.8956C12.76 10.9554 12.7732 11.0178 12.7997 11.1427L13.5133 14.5067C13.6029 14.9291 13.6477 15.1402 13.5844 15.2613C13.5293 15.3665 13.4283 15.4398 13.3113 15.4597C13.1766 15.4824 12.9896 15.3746 12.6156 15.1589L9.63667 13.4407C9.52612 13.3769 9.47084 13.3451 9.41208 13.3326C9.36007 13.3216 9.30631 13.3216 9.2543 13.3326C9.19554 13.3451 9.14026 13.3769 9.02972 13.4407L6.05078 15.1589C5.67678 15.3746 5.48978 15.4824 5.35508 15.4597C5.23807 15.4398 5.13706 15.3665 5.08206 15.2613C5.01875 15.1402 5.06353 14.9291 5.15312 14.5067L5.86664 11.1427C5.89312 11.0178 5.90637 10.9554 5.90008 10.8956C5.89451 10.8428 5.87791 10.7917 5.85133 10.7456C5.82131 10.6936 5.7739 10.6508 5.67909 10.5654L3.12447 8.26317C2.80375 7.97412 2.64339 7.82964 2.62345 7.69449C2.60614 7.57708 2.64472 7.45833 2.72773 7.37353C2.82331 7.27589 3.03799 7.25324 3.46735 7.20792L6.88728 6.84696C7.01421 6.83357 7.07767 6.82687 7.13255 6.80243C7.1811 6.7808 7.22458 6.74921 7.26015 6.70971C7.30036 6.66508 7.32634 6.60679 7.37831 6.49021L8.7784 3.34921Z"
+                    stroke="#D8C30B" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-between mb-3">
+            <h3 class="span">1300₽</h3>
+            <ul class="d-flex">
+              <!-- Вставить ссылки с иконками на поделится -->
+            </ul>
+          </div>
+
+          <button class="button w-100">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-5">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+          role="tab" aria-controls="nav-home" aria-selected="true">Описание</button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+          role="tab" aria-controls="nav-profile" aria-selected="false">Отзывы</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <div class="d-flex flex-column mt-3">
+          <p class="text-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+          <p class="text-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+      <!-- Отзывы -->
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        <div class="row gy-4 mt-4">
+          <div class="col-lg-6">
+            <div class="rewiew-card d-flex">
+              <img class="w-100 rounded-4" src="/img/developer.png" />
+              <div class="d-flex flex-column">
+                <h4>Иванова Инна Ивановна</h4>
+                <ul class="d-flex rating mb-2">
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                </ul>
+                <p class="text-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="rewiew-card d-flex">
+              <img class="w-100 rounded-4" src="/img/developer.png" />
+              <div class="d-flex flex-column">
+                <h4>Иванова Инна Ивановна</h4>
+                <ul class="d-flex rating mb-2">
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                </ul>
+                <p class="text-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+          <button class="button">Оставить отзыв</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-5">
+    <div class="d-flex justify-content-between">
+      <h2>Другие товары</h2>
+      <button class="button-out">В магазин</button>
+    </div>
+    <swiper-container class="mySwiper" navigation="true">
+      <swiper-slide>
+        <div class="row gy-4 mt-4">
+          <div class="col-lg-3">
+            <div class="container-card d-flex flex-column">
+              <button class="btn-save">
+                <img class="img-save" src="/img/Icon/heart-outline.svg" />
+              </button>
+              <div class="d-flex justify-content-center">
+                <img class="img-product w-100 img-zoom" src="/img/product/one.png" />
+              </div>
+              <div class="card-info">
+                <h4>1-й центр</h4>
+                <div class="d-flex justify-content-between mt-3">
+                  <p class="text-4">
+                    Жизненная энергия, тонус, <br />
+                    либидо.
+                  </p>
+                  <p class="text-1">1300₽</p>
+                </div>
+              </div>
+
+              <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
+                <button class="mainButton button w-100">Оформить</button>
+
+                <div class="counterButton d-none justify-content-between align-items-center">
+                  <a class="decrement">-</a>
+                  <span class="counter counterValue">1</span>
+                  <a class="increment">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="container-card d-flex flex-column">
+              <button class="btn-save">
+                <img class="img-save" src="/img/Icon/heart-outline.svg" />
+              </button>
+              <div class="d-flex justify-content-center">
+                <img class="img-product w-100 img-zoom" src="/img/product/one.png" />
+              </div>
+              <div class="card-info">
+                <h4>1-й центр</h4>
+                <div class="d-flex justify-content-between mt-3">
+                  <p class="text-4">
+                    Жизненная энергия, тонус, <br />
+                    либидо.
+                  </p>
+                  <p class="text-1">1300₽</p>
+                </div>
+              </div>
+
+              <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
+                <button class="mainButton button w-100">Оформить</button>
+
+                <div class="counterButton d-none justify-content-between align-items-center">
+                  <a class="decrement">-</a>
+                  <span class="counter counterValue">1</span>
+                  <a class="increment">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="container-card d-flex flex-column">
+              <button class="btn-save">
+                <img class="img-save" src="/img/Icon/heart-outline.svg" />
+              </button>
+              <div class="d-flex justify-content-center">
+                <img class="img-product w-100 img-zoom" src="/img/product/one.png" />
+              </div>
+              <div class="card-info">
+                <h4>1-й центр</h4>
+                <div class="d-flex justify-content-between mt-3">
+                  <p class="text-4">
+                    Жизненная энергия, тонус, <br />
+                    либидо.
+                  </p>
+                  <p class="text-1">1300₽</p>
+                </div>
+              </div>
+
+              <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
+                <button class="mainButton button w-100">Оформить</button>
+
+                <div class="counterButton d-none justify-content-between align-items-center">
+                  <a class="decrement">-</a>
+                  <span class="counter counterValue">1</span>
+                  <a class="increment">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="container-card d-flex flex-column">
+              <button class="btn-save">
+                <img class="img-save" src="/img/Icon/heart-outline.svg" />
+              </button>
+              <div class="d-flex justify-content-center">
+                <img class="img-product w-100 img-zoom" src="/img/product/one.png" />
+              </div>
+              <div class="card-info">
+                <h4>1-й центр</h4>
+                <div class="d-flex justify-content-between mt-3">
+                  <p class="text-4">
+                    Жизненная энергия, тонус, <br />
+                    либидо.
+                  </p>
+                  <p class="text-1">1300₽</p>
+                </div>
+              </div>
+
+              <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
+                <button class="mainButton button w-100">Оформить</button>
+
+                <div class="counterButton d-none justify-content-between align-items-center">
+                  <a class="decrement">-</a>
+                  <span class="counter counterValue">1</span>
+                  <a class="increment">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="row gy-4 mt-4">
+          <div class="col-lg-3">
+            <div class="container-card d-flex flex-column">
+              <button class="btn-save">
+                <img class="img-save" src="/img/Icon/heart-outline.svg" />
+              </button>
+              <div class="d-flex justify-content-center">
+                <img class="img-product w-100 img-zoom" src="/img/product/one.png" />
+              </div>
+              <div class="card-info">
+                <h4>1-й центр</h4>
+                <div class="d-flex justify-content-between mt-3">
+                  <p class="text-4">
+                    Жизненная энергия, тонус, <br />
+                    либидо.
+                  </p>
+                  <p class="text-1">1300₽</p>
+                </div>
+              </div>
+
+              <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
+                <button class="mainButton button w-100">Оформить</button>
+
+                <div class="counterButton d-none justify-content-between align-items-center">
+                  <a class="decrement">-</a>
+                  <span class="counter counterValue">1</span>
+                  <a class="increment">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="container-card d-flex flex-column">
+              <button class="btn-save">
+                <img class="img-save" src="/img/Icon/heart-outline.svg" />
+              </button>
+              <div class="d-flex justify-content-center">
+                <img class="img-product w-100 img-zoom" src="/img/product/one.png" />
+              </div>
+              <div class="card-info">
+                <h4>1-й центр</h4>
+                <div class="d-flex justify-content-between mt-3">
+                  <p class="text-4">
+                    Жизненная энергия, тонус, <br />
+                    либидо.
+                  </p>
+                  <p class="text-1">1300₽</p>
+                </div>
+              </div>
+
+              <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
+                <button class="mainButton button w-100">Оформить</button>
+
+                <div class="counterButton d-none justify-content-between align-items-center">
+                  <a class="decrement">-</a>
+                  <span class="counter counterValue">1</span>
+                  <a class="increment">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="container-card d-flex flex-column">
+              <button class="btn-save">
+                <img class="img-save" src="/img/Icon/heart-outline.svg" />
+              </button>
+              <div class="d-flex justify-content-center">
+                <img class="img-product w-100 img-zoom" src="/img/product/one.png" />
+              </div>
+              <div class="card-info">
+                <h4>1-й центр</h4>
+                <div class="d-flex justify-content-between mt-3">
+                  <p class="text-4">
+                    Жизненная энергия, тонус, <br />
+                    либидо.
+                  </p>
+                  <p class="text-1">1300₽</p>
+                </div>
+              </div>
+
+              <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
+                <button class="mainButton button w-100">Оформить</button>
+
+                <div class="counterButton d-none justify-content-between align-items-center">
+                  <a class="decrement">-</a>
+                  <span class="counter counterValue">1</span>
+                  <a class="increment">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </section>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/btn-card.js"></script>
+  <script src="./js/btn-save.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/swiper-element-bundle.min.js"></script>
+  <script src="./js/swiper-init.js"></script>
 </body>
+
 </html>

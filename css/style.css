@@ -441,6 +441,20 @@ h4 {
   
 }
 
+.container-img-product {
+  background-color: var(--color-var-back-block);
+  height: 500px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  position: relative;
+}
+
+.container-img-product img {
+  max-height: 400px;
+}
+
 /* ACCORDEON */
 
 .accordion__item {
