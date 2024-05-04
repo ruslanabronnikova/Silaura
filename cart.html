@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/swiper.min.css" />
+  <title>Корзина</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand me-5" href="/"><img src="./img/logo.svg" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+      aria-controls="staticBackdrop" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Продукция</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Применение
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Статьи </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Отзывы </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-btns mb-0 me-5 d-flex">
+        <li>
+          <a href="/" class="btn-item">
+            <img src="./img/Icon/heart-outline.svg" alt="Иконка сердце" />
+            <div class="btn-counter">
+              <p>0</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/" class="btn-item">
+            <img src="./img/Icon/cart.svg" alt="Иконка корзины" />
+            <div class="btn-counter">
+              <p>0</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <button class="button-out" onclick="window.open('/sign-in.html', '_blank');">
+        Войти/Зарегистрироваться
+      </button>
+    </div>
+  </nav>
+
+  <section class="container mt-5">
+    <div class="row">
+      <h2>Корзина товаров</h2>
+
+      <div class="col-lg-7 mt-5">
+        <div class="d-flex justify-content-between align-items-center back-white rounded-4 mb-3">
+          <div class="info-product">
+            <img class="w-100" src="./img/product/one.png  " />
+            <div class="info-text">
+              <h5>1-й центр</h5>
+              <p class="text-3">Жизненная энергия, тонус, либидо.</p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center buttons-cart">
+            <div class="counterButton d-flex justify-content-between align-items-center">
+              <a class="decrement">-</a>
+              <span class="counter counterValue">1</span>
+              <a class="increment">+</a>
+            </div>
+            <a href="/"><img src="./img/Icon/delete-cart.svg" /></a>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center back-white rounded-4 mb-3">
+          <div class="info-product">
+            <img class="w-100" src="./img/product/one.png  " />
+            <div class="info-text">
+              <h5>1-й центр</h5>
+              <p class="text-3">Жизненная энергия, тонус, либидо.</p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center buttons-cart">
+            <div class="counterButton d-flex justify-content-between align-items-center">
+              <a class="decrement">-</a>
+              <span class="counter counterValue">1</span>
+              <a class="increment">+</a>
+            </div>
+            <a href="/"><img src="./img/Icon/delete-cart.svg" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 mt-5">
+        <div class="content-info-cart">
+          <ul class="lists-info">
+            <li class="d-flex justify-content-between">
+              <p class="text-3">Товаров в корзине:</p>
+              <strong class="text-2">3</strong>
+            </li>
+            <li class="d-flex justify-content-between">
+              <p class="text-3">Общий вес:</p>
+              <strong class="text-2">200гр</strong>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="d-flex justify-content-between">
+              <p class="text-3">Итого:</p>
+              <strong class="span text-2">3.000₽</strong>
+            </li>
+          </ul>
+        </div>
+
+        <button class="button w-100 mt-3">Оформить заказ</button>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
