@@ -577,3 +577,18 @@ h4 {
 .buttons-cart {
   gap: 20px;
 }
+
+.error {
+  color: red;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Задаем цвет и прозрачность */
+  z-index: 1; /* Убеждаемся, что элемент находится выше остальных элементов */
+  display: none; /* По умолчанию скрываем элемент */
+}

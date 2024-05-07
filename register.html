@@ -8,34 +8,39 @@
   <link rel="stylesheet" href="/css/style.css" />
   <title>Вход</title>
 </head>
-<body>
-  <section class="container mt-5">
-    <div class="row">
+<body class="container-fluid h-100 d-table position-absolute top-0 left-0 right-0 bottom-0 p-0 m-0 overflow-hidden">
+  <section class="container h-100">
+    <div class="row align-items-center justify-content-center h-100 pb-5 mb-5">
       <div class="col-lg-6 d-flex flex-column justify-content-between">
         <div class="d-flex flex-column">
           <h1>Добро пожаловать!</h1>
-          <p class="text-3">Заполните данные ниже, чтобы зарегистрироваться в системе</p>
+          <p class="text-3 mt-3">Заполните данные ниже, чтобы зарегистрироваться в системе</p>
         </div>
         <form class="needs-validation mt-5" novalidate>
           <div class="row g-3">
             <div class="col-sm-12">
-              <input type="text" class="form-control" id="firstName" placeholder="ФИО" required />
+                <input type="text" class="form-control" id="firstName" placeholder="ФИО" required />
+                <span class="error mt-3 text-3" style="display: none;">Пожалуйста, введите корректное ФИО.</span>
             </div>
-
+        
             <div class="col-sm-12">
-              <input type="text" class="form-control" id="firstName" placeholder="Email" required />
+                <input type="email" class="form-control" id="email" placeholder="Email" required />
+                <span class="error mt-3 text-3" style="display: none;">Пожалуйста, введите корректный адрес электронной почты.</span>
             </div>
-
+        
             <div class="col-sm-12">
-              <input type="text" class="form-control" id="firstName" placeholder="Пароль" required />
+                <input type="password" class="form-control" id="password" placeholder="Пароль" required />
+                <span class="error mt-3 text-3" style="display: none;">Пожалуйста, введите корректный пароль.</span>
             </div>
-
+        
             <div class="col-sm-12">
-              <input type="password" class="form-control" id="lastName" placeholder="Повторить пароль" required />
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Повторить пароль" required />
+                <span class="error mt-3 text-3" style="display: none;">Пароли не совпадают.</span>
             </div>
-          </div>
+        </div>
+        
         </form>
-        <button class="w-100 button mt-4" type="submit">
+        <button class="w-100 button mt-4" type="submit" onclick="validateInput()">
           Зарегистрироваться
         </button>
         <div class="btns-reg d-flex align-items-center justify-content-between mt-3">
@@ -48,5 +53,7 @@
       </div>
     </div>
   </section>
+
+  <script src="./js/validate.js"></script>
 </body>
 </html>
