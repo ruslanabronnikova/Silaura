@@ -62,6 +62,34 @@
     </div>
   </nav>
 
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <a class="navbar-brand" href="#"><img src="./img/logo.svg" /></a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Наши направления</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Наши специалисты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Статьи и видео
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <section class="main container mt-5">
     <div class="row">
       <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 d-flex flex-column justify-content-between">
@@ -78,8 +106,8 @@
           <button class="button mt-3 w-100">Перейти в каталог</button>
         </div>
       </div>
-      <swiper-container class="mySwiper col-xxl-7 col-xl-7 col-lg-7 col-md-12" pagination="true"
-        pagination-dynamic-bullets="true"  grab-cursor="true">
+      <swiper-container class="mySwiper col-xxl-7 col-xl-7 col-lg-7 col-md-12 mt-xxl-0 mt-xl-0 mt-lg-0 mt-4"
+        pagination="true" pagination-dynamic-bullets="true" grab-cursor="true">
         <swiper-slide>
           <div class="container-slider">
             <div class="info-img">
@@ -99,7 +127,7 @@
     </div>
   </section>
 
-  <section class="container mt-5">
+  <!-- <section class="container mt-5">
     <div class="row d-flex justify-content-between align-items-center mt-3">
       <h2 class="col-lg-8">Технология разработок</h2>
       <p class="text-3 col-lg-4">В процессе изготовления продукта использованы три блока уникальных разработок</p>
@@ -148,7 +176,7 @@
         <img src="./img/sound-wave.png" />
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="line-production container mt-5">
     <h2 class="mb-3">Линейка продукции</h2>
@@ -166,14 +194,14 @@
             <h4>1-й центр</h4>
             <div class="d-flex justify-content-between mt-3">
               <p class="text-4">
-                Жизненная энергия, тонус, <br />
+                Жизненная энергия, тонус,
                 либидо.
               </p>
               <p class="text-1">1300₽</p>
             </div>
           </div>
 
-          <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
+          <div class="d-flex justify-content-center mt-2 buttonContainer">
             <button class="mainButton button w-100">Оформить</button>
 
             <div class="counterButton d-none justify-content-between align-items-center">
@@ -184,7 +212,6 @@
           </div>
         </div>
       </div>
-
       <div class="col-lg-3">
         <div class="container-card d-flex flex-column">
           <button class="btn-save">
@@ -197,14 +224,14 @@
             <h4>1-й центр</h4>
             <div class="d-flex justify-content-between mt-3">
               <p class="text-4">
-                Жизненная энергия, тонус, <br />
+                Жизненная энергия, тонус,
                 либидо.
               </p>
               <p class="text-1">1300₽</p>
             </div>
           </div>
 
-          <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
+          <div class="d-flex justify-content-center mt-2 buttonContainer">
             <button class="mainButton button w-100">Оформить</button>
 
             <div class="counterButton d-none justify-content-between align-items-center">
@@ -215,7 +242,6 @@
           </div>
         </div>
       </div>
-
       <div class="col-lg-3">
         <div class="container-card d-flex flex-column">
           <button class="btn-save">
@@ -228,14 +254,14 @@
             <h4>1-й центр</h4>
             <div class="d-flex justify-content-between mt-3">
               <p class="text-4">
-                Жизненная энергия, тонус, <br />
+                Жизненная энергия, тонус,
                 либидо.
               </p>
               <p class="text-1">1300₽</p>
             </div>
           </div>
 
-          <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
+          <div class="d-flex justify-content-center mt-2 buttonContainer">
             <button class="mainButton button w-100">Оформить</button>
 
             <div class="counterButton d-none justify-content-between align-items-center">
@@ -246,7 +272,6 @@
           </div>
         </div>
       </div>
-
       <div class="col-lg-3">
         <div class="container-card d-flex flex-column">
           <button class="btn-save">
@@ -259,14 +284,14 @@
             <h4>1-й центр</h4>
             <div class="d-flex justify-content-between mt-3">
               <p class="text-4">
-                Жизненная энергия, тонус, <br />
+                Жизненная энергия, тонус,
                 либидо.
               </p>
               <p class="text-1">1300₽</p>
             </div>
           </div>
 
-          <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
+          <div class="d-flex justify-content-center mt-2 buttonContainer">
             <button class="mainButton button w-100">Оформить</button>
 
             <div class="counterButton d-none justify-content-between align-items-center">
@@ -277,7 +302,6 @@
           </div>
         </div>
       </div>
-
       <div class="col-lg-3">
         <div class="container-card d-flex flex-column">
           <button class="btn-save">
@@ -290,76 +314,14 @@
             <h4>1-й центр</h4>
             <div class="d-flex justify-content-between mt-3">
               <p class="text-4">
-                Жизненная энергия, тонус, <br />
+                Жизненная энергия, тонус,
                 либидо.
               </p>
               <p class="text-1">1300₽</p>
             </div>
           </div>
 
-          <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
-            <button class="mainButton button w-100">Оформить</button>
-
-            <div class="counterButton d-none justify-content-between align-items-center">
-              <a class="decrement">-</a>
-              <span class="counter counterValue">1</span>
-              <a class="increment">+</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3">
-        <div class="container-card d-flex flex-column">
-          <button class="btn-save">
-            <img class="img-save" src="/img/Icon/heart-outline.svg" />
-          </button>
-          <div class="d-flex justify-content-center">
-            <img class="img-product w-100 img-zoom" src="/img/product/one.png" />
-          </div>
-          <div class="card-info">
-            <h4>1-й центр</h4>
-            <div class="d-flex justify-content-between mt-3">
-              <p class="text-4">
-                Жизненная энергия, тонус, <br />
-                либидо.
-              </p>
-              <p class="text-1">1300₽</p>
-            </div>
-          </div>
-
-          <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
-            <button class="mainButton button w-100">Оформить</button>
-
-            <div class="counterButton d-none justify-content-between align-items-center">
-              <a class="decrement">-</a>
-              <span class="counter counterValue">1</span>
-              <a class="increment">+</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3">
-        <div class="container-card d-flex flex-column">
-          <button class="btn-save">
-            <img class="img-save" src="/img/Icon/heart-outline.svg" />
-          </button>
-          <div class="d-flex justify-content-center">
-            <img class="img-product w-100 img-zoom" src="/img/product/one.png" />
-          </div>
-          <div class="card-info">
-            <h4>1-й центр</h4>
-            <div class="d-flex justify-content-between mt-3">
-              <p class="text-4">
-                Жизненная энергия, тонус, <br />
-                либидо.
-              </p>
-              <p class="text-1">1300₽</p>
-            </div>
-          </div>
-
-          <div class="d-none d-md-flex justify-content-center mt-2 buttonContainer">
+          <div class="d-flex justify-content-center mt-2 buttonContainer">
             <button class="mainButton button w-100">Оформить</button>
 
             <div class="counterButton d-none justify-content-between align-items-center">
@@ -586,8 +548,8 @@
   <section class="container mt-5">
     <h2>Научные статьи</h2>
 
-    <div class="row mt-5">
-      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+    <div class="row gy-4 mt-5">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
         <div class="card-new">
           <img class="w-100 rounded-5" src="./img/img-news.png" />
           <h5 class="span mt-3">Поддержка Саморегуляции</h5>
@@ -605,7 +567,7 @@
         </div>
       </div>
 
-      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
         <div class="card-new">
           <img class="w-100 rounded-5" src="./img/img-news.png" />
           <h5 class="span mt-3">Поддержка Саморегуляции</h5>
@@ -841,5 +803,6 @@
 <script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/swiper-element-bundle.min.js"></script>
 <script src="./js/swiper-init.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
 
 </html>

@@ -291,7 +291,6 @@ h4 {
   padding: 45px;
   background-color: #C2DDEC;
   border-radius: 30px;
-  max-width: 462px;
   max-height: 265px;
   margin-bottom: 30px;
 }
@@ -388,6 +387,18 @@ h4 {
   right: 0;
 }
 
+@media (max-width: 760px) {
+  .breadcrumbs img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 525px) {
+  .breadcrumbs img {
+    display: none;
+  }
+}
+
 .input-group-text {
   border: 1px solid var(--color-var-btn-primary);
   background-color: var(--color-var-back-block);
@@ -422,6 +433,10 @@ h4 {
   border: 1px solid var(--color-var-btn-primary);
   border-radius: 200px;
   display: flex;
+}
+
+.dropdown button{
+  border-radius: 200px;
 }
 
 .button-dropdown {
@@ -564,9 +579,6 @@ h4 {
 }
 
 .info-product {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   gap: 20px;
 }
 
