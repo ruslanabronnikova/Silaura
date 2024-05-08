@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Новости</title>
+  </head>
+  <body>
+    <section class="container mt-5">
+      <div class="breadcrumbs d-flex justify-content-between align-items-end">
+        <div class="d-flex justify-content-between flex-column">
+          <h3>Новости компании</h3>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Библиотека
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5">
+      <div class="row justify-content-end gy-4">
+        <div class="col-lg-8">
+          <div class="input-group">
+            <span class="input-group-text">
+              <img src="./img/Icon/search.svg" />
+            </span>
+            <input type="text" class="form-control" placeholder="Поиск" />
+          </div>
+        </div>
+
+        <div class="col-lg-4 justify-content-end d-flex">
+          <div class="d-flex justify-content-between filters">
+            <div class="dropdown">
+              <button
+                class="btn button-dropdown dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Фильтры
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Действие</a></li>
+                <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <button
+                class="btn button-dropdown dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                По популярности
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Действие</a></li>
+                <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5">
+      <h2>Научные статьи</h2>
+
+      <div class="row gy-4 mt-5">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+          <div class="card-new">
+            <img class="w-100 rounded-5" src="./img/img-news.png" />
+            <h4 class="span mt-3">Поддержка Саморегуляции</h4>
+            <div class="d-flex justify-content-between align-items-end">
+              <p class="text-3">
+                Наше средство стимулирует процессы саморегуляции, помогая вашему
+                организму восстановить баланс и гармонию, что способствует
+                вашему общему благополучию.
+              </p>
+              <a
+                class="d-flex justify-content-between align-items-center"
+                href="/"
+              >
+                <p class="text-4 span mb-0">Читать</p>
+                <img class="ms-3" src="./img/Icon/arrow.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+          <div class="card-new">
+            <img class="w-100 rounded-5" src="./img/img-news.png" />
+            <h4 class="span mt-3">Поддержка Саморегуляции</h4>
+            <div class="d-flex justify-content-between align-items-end">
+              <p class="text-3">
+                Наше средство стимулирует процессы саморегуляции, помогая вашему
+                организму восстановить баланс и гармонию, что способствует
+                вашему общему благополучию.
+              </p>
+              <a
+                class="d-flex justify-content-between align-items-center"
+                href="/"
+              >
+                <p class="text-4 span mb-0">Читать</p>
+                <img class="ms-3" src="./img/Icon/arrow.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="mt-5 d-flex justify-content-center" aria-label="Пример навигации по страницам">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Предыдущая">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Следующая">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </body>
+</html>

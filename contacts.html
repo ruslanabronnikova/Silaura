@@ -107,7 +107,6 @@
           <div class="row g-3">
             <div class="col-sm-12">
               <input type="text" class="form-control" id="firstName" placeholder="ФИО" required />
-              <span class="error mt-3 text-3" style="display: none;">Пожалуйста, введите корректное ФИО.</span>
             </div>
 
             <div class="col-sm-12">
@@ -116,8 +115,6 @@
 
             <div class="col-sm-12">
               <input type="email" class="form-control" id="email" placeholder="Email" required />
-              <span class="error mt-3 text-3" style="display: none;">Пожалуйста, введите корректный адрес электронной
-                почты.</span>
             </div>
             <div class="col-sm-12">
               <textarea class="form-control" id="message-text" placeholder="Задать вопрос" maxlength="1000"></textarea>
@@ -130,7 +127,7 @@
             Я согласен на обработку персональных данных и с условиями политики конфиденциальности
           </label>
         </div>
-        <button class="w-100 button mt-5" type="submit" onclick="validateInput()">
+        <button class="w-100 button mt-5" type="submit">
           Отправить заявку
         </button>
       </div>
@@ -193,5 +190,4 @@
   </footer>
 </body>
 
-<script src="./js/validate.js"></script>
 </html>

@@ -1,18 +1,18 @@
 @import url(../vendor/font/manrope.css);
 
 :root {
-  --color-var-back-page: #F5F6FF;
+  --color-var-back-page: #f5f6ff;
   --color-var-back-block: #fff;
-  --color-var-btn-primary: #826BDD;
-  --color-var-title-primary: #826BDD;
-  --color-var-text: #4D4D4D;
+  --color-var-btn-primary: #826bdd;
+  --color-var-title-primary: #826bdd;
+  --color-var-text: #4d4d4d;
   --color-var-light: #757575;
   --color-var-text-white: #fff;
 }
 
 body {
   background-color: var(--color-var-back-page);
-  font-family: 'Manrope', 'sans-serif';
+  font-family: "Manrope", "sans-serif";
   margin: 0;
   padding: 0;
   border: 0;
@@ -35,7 +35,7 @@ button {
 }
 
 a {
-  color: var(--color-var-text)
+  color: var(--color-var-text);
 }
 
 ul {
@@ -44,9 +44,9 @@ ul {
 }
 
 h1 {
-  font-size: 62px;
+  font-size: 55px;
   line-height: 1.1;
-  font-family: 'Manrope', 'sans-serif';
+  font-family: "Manrope", "sans-serif";
   font-weight: bold;
   font-style: normal;
   color: var(--color-var-text);
@@ -55,7 +55,7 @@ h1 {
 h2 {
   font-size: 40px;
   line-height: 1.2;
-  font-family: 'Manrope', 'sans-serif';
+  font-family: "Manrope", "sans-serif";
   font-weight: bold;
   font-style: normal;
   color: var(--color-var-text);
@@ -64,7 +64,7 @@ h2 {
 h3 {
   font-size: 30px;
   line-height: 1.2;
-  font-family: 'Manrope', 'sans-serif';
+  font-family: "Manrope", "sans-serif";
   font-weight: normal;
   font-style: normal;
   color: var(--color-var-text);
@@ -73,15 +73,10 @@ h3 {
 h4 {
   font-size: 16px;
   line-height: 1.2;
-  font-family: 'Manrope', 'sans-serif';
+  font-family: "Manrope", "sans-serif";
   font-weight: 500;
   font-style: normal;
   color: var(--color-var-text);
-}
-
-
-.title-color {
-  color: var(--color-var-back-block);
 }
 
 .text-1 {
@@ -116,6 +111,7 @@ h4 {
   color: var(--color-var-title-primary);
 }
 
+/* ??? */
 .back-white {
   background-color: var(--color-var-back-block);
   padding: 45px;
@@ -137,7 +133,7 @@ h4 {
   color: white;
   line-height: 1;
   height: 50px;
-  transition: all .2s;
+  transition: all 0.2s;
   border-radius: 50px;
 }
 
@@ -154,13 +150,27 @@ h4 {
   padding: 10px 20px;
   height: 45px;
   font-size: 14px;
-  transition: all .2s;
+  transition: all 0.2s;
   border-radius: 50px;
 }
 
 .button-out:hover {
   background-color: var(--color-var-btn-primary);
   color: white;
+}
+
+.page-link {
+  color: var(--color-var-btn-primary) !important;
+}
+
+.page-link:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
 }
 
 .counterButton {
@@ -170,7 +180,7 @@ h4 {
   padding: 10px 40px;
   height: 50px;
   font-size: 14px;
-  transition: all .2s;
+  transition: all 0.2s;
   border-radius: 50px;
   display: flex;
   gap: 5px;
@@ -198,10 +208,11 @@ h4 {
   padding: 0;
 }
 
-.img-save {
+.btn-save img {
   width: 18px;
 }
 
+/* ??? */
 .navbar-btns {
   gap: 20px;
 }
@@ -254,7 +265,7 @@ h4 {
 }
 
 .card-advant {
-  background-color: #CDC2EC;
+  background-color: #cdc2ec;
   display: flex;
   padding: 60px 100px;
   border-radius: 30px;
@@ -264,11 +275,11 @@ h4 {
 }
 
 .card-advant:nth-last-of-type(2) {
-  background-color: #C2DDEC;
+  background-color: #c2ddec;
 }
 
 .card-advant:last-child {
-  background-color: #D2ECC2;
+  background-color: #d2ecc2;
 }
 
 .card-advant p {
@@ -276,8 +287,6 @@ h4 {
 }
 
 .substances-lists {
-  display: flex;
-  flex-direction: column;
   gap: 5px;
   list-style: inside;
 }
@@ -289,18 +298,14 @@ h4 {
 
 .card-using {
   padding: 45px;
-  background-color: #C2DDEC;
+  background-color: #c2ddec;
   border-radius: 30px;
-  max-height: 265px;
+  height: 265px;
   margin-bottom: 30px;
 }
 
 .card-using:last-child {
-  background-color: #D2ECC2;
-}
-
-.card-using p {
-  margin-top: 70px;
+  background-color: #d2ecc2;
 }
 
 .result-card {
@@ -315,8 +320,8 @@ h4 {
 }
 
 .col-lg-4:nth-child(2) .result-card {
-  background-color: #CDC2EC;
-  background-image: url('../img/abstract-wave.png');
+  background-color: #cdc2ec;
+  background-image: url("../img/abstract-wave.png");
   background-repeat: no-repeat;
   background-size: 275px 215px;
   background-position: right bottom;
@@ -369,8 +374,8 @@ h4 {
 
 /* CATALOG */
 .breadcrumbs {
-  background-color: #CDC2EC;
-  background-image: url('../../img/back-breadcumps.svg');
+  background-color: #cdc2ec;
+  background-image: url("../../img/back-breadcumps.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -385,18 +390,6 @@ h4 {
   position: absolute;
   bottom: 0;
   right: 0;
-}
-
-@media (max-width: 760px) {
-  .breadcrumbs img {
-    width: 200px;
-  }
-}
-
-@media (max-width: 525px) {
-  .breadcrumbs img {
-    display: none;
-  }
 }
 
 .input-group-text {
@@ -435,7 +428,7 @@ h4 {
   display: flex;
 }
 
-.dropdown button{
+.dropdown button {
   border-radius: 200px;
 }
 
@@ -451,7 +444,6 @@ h4 {
 
 .img-zoom:hover {
   transform: scale(1.2);
-
 }
 
 .container-img-product {
@@ -537,7 +529,7 @@ h4 {
 }
 
 .back-img {
-  background-image: url('../img/Icon/wave-form.svg');
+  background-image: url("../img/Icon/wave-form.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -590,17 +582,82 @@ h4 {
   gap: 20px;
 }
 
-.error {
-  color: red;
+@media (max-width: 1199px) {
+  .card-advant {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 70px;
+  }
+
+  .card-advant p {
+    width: 100%;
+  }
+
+  .card-advant img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
 }
 
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8); /* Задаем цвет и прозрачность */
-  z-index: 1; /* Убеждаемся, что элемент находится выше остальных элементов */
-  display: none; /* По умолчанию скрываем элемент */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .card-advant img {
+    max-width: 200px;
+  }
+
+  .breadcrumbs img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 525px) {
+  .breadcrumbs img {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .text-1 {
+    font-size: 18px;
+  }
+
+  .text-2 {
+    font-size: 14px;
+  }
+  
+  .text-3 {
+    font-size: 12px;
+  }
+
+  .card-advant {
+    padding: 40px 40px;
+  }
+
+  .footer-doc {
+    gap: 5px;
+  }
+  
 }
