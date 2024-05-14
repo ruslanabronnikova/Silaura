@@ -7,68 +7,21 @@
   <link rel="stylesheet" href="/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/swiper.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/animate.min.css" />
   <title>Корзина</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg container">
-    <a class="navbar-brand me-5" href="/"><img src="./img/logo.svg" /></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-      aria-controls="staticBackdrop" aria-label="Переключатель навигации">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/catalog.html">Продукция</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">О нас</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Применение
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Статьи </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Отзывы </a>
-        </li>
-      </ul>
-
-      <ul class="navbar-btns mb-0 me-5 d-flex">
-        <li>
-          <a href="/" class="btn-item">
-            <img src="./img/Icon/heart-outline.svg" alt="Иконка сердце" />
-            <div class="btn-counter">
-              <p>0</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="/" class="btn-item">
-            <img src="./img/Icon/cart.svg" alt="Иконка корзины" />
-            <div class="btn-counter">
-              <p>0</p>
-            </div>
-          </a>
-        </li>
-      </ul>
-
-      <button class="button-out" onclick="window.open('/sign-in.html', '_blank');">
-        Войти/Зарегистрироваться
-      </button>
-    </div>
-  </nav>
-
   <section class="container mt-5">
     <div class="row">
-      <h2>Корзина товаров</h2>
+      <h2 class="animate__animated animate__backInLeft animate__fast">Корзина товаров</h2>
 
-      <div class="col-lg-7 mt-5">
-        <div class="d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-column justify-content-between align-items-center back-white rounded-4 mb-3">
-          <div class="info-product d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-column justify-content-between align-items-center">
+      <div class="col-lg-7 mt-5 animate__animated animate__backInLeft animate__slow">
+        <div
+          class="d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-column justify-content-between align-items-center back-white rounded-4 mb-3">
+          <div
+            class="info-product d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-column justify-content-between align-items-center">
             <img class="w-100" src="./img/product/one.png  " />
             <div class="info-text">
               <h5>1-й центр</h5>
@@ -87,7 +40,7 @@
         </div>
       </div>
 
-      <div class="col-lg-5 mt-5">
+      <div class="col-lg-5 mt-5 animate__animated animate__backInRight animate__slower">
         <div class="content-info-cart">
           <ul class="lists-info">
             <li class="d-flex justify-content-between">
@@ -113,5 +66,8 @@
     </div>
   </section>
 </body>
+<script src="./js/wow.min.js"></script>
+<script>new WOW().init();</script>
+<script src="./js/card-product.js"></script>
 
 </html>

@@ -7,58 +7,12 @@
   <link rel="stylesheet" href="/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/swiper.min.css" />
+  <link rel="stylesheet" href="./css/animate.min.css" />
   <title>Товар</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg container">
-    <a class="navbar-brand" href="/"><img src="./img/logo.svg" /></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-      aria-controls="staticBackdrop" aria-label="Переключатель навигации">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Продукция</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">О нас</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Применение
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Статьи </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Отзывы </a>
-        </li>
-      </ul>
-
-      <ul class="navbar-btns mb-0 me-auto d-flex">
-        <li class="btn-item">
-          <img src="./img/Icon/heart-outline.svg" alt="Иконка сердце" />
-          <div class="btn-counter">
-            <p>0</p>
-          </div>
-        </li>
-        <li class="btn-item">
-          <img src="./img/Icon/cart.svg" alt="Иконка корзины" />
-          <div class="btn-counter">
-            <p>0</p>
-          </div>
-        </li>
-      </ul>
-
-      <button class="button-out" onclick="window.open('/sign-in.html', '_blank');">
-        Войти/Зарегистрироваться
-      </button>
-    </div>
-  </nav>
-
-  <section class="container mt-5">
+  <section class="container mt-5 animate__animated animate__backInLeft animate__fast">
     <div class="breadcrumbs d-flex justify-content-between align-items-end">
       <div class="d-flex justify-content-between flex-column">
         <h3>Каталог продукции</h3>
@@ -79,14 +33,14 @@
 
   <section class="container mt-5">
     <div class="row">
-      <div class="container-img-product col-xxl-6 col-xl-6 col-lg-6 col-md-12">
+      <div class="container-img-product col-xxl-6 col-xl-6 col-lg-6 col-md-12 animate__animated animate__backInLeft animate__slow">
         <button class="btn-save">
           <img class="img-save" src="/img/Icon/heart-outline.svg" />
         </button>
         <img class="img-zoom" src="/img/product/one.png" />
       </div>
 
-      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 d-flex justify-content-between flex-column">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 d-flex justify-content-between flex-column animate__animated animate__backInRight animate__slower">
         <div class="d-flex flex-column">
           <h2>1-й центр</h2>
           <div class="d-flex flex-column">
@@ -202,43 +156,51 @@
       <!-- Отзывы -->
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
         <div class="row gy-4 mt-4">
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-            <div class="card-new">
-              <img class="w-100 rounded-5" src="./img/img-news.png" />
-              <h5 class="span mt-3">Поддержка Саморегуляции</h5>
-              <div class="d-flex justify-content-between align-items-end">
-                <p class="text-3">
-                  Наше средство стимулирует процессы саморегуляции, помогая вашему
-                  организму восстановить баланс и гармонию, что способствует
-                  вашему общему благополучию.
+          <div class="col-lg-6">
+            <div class="rewiew-card d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-column">
+              <img class="w-100 rounded-4" src="/img/developer.png" />
+              <div class="d-flex flex-column mt-xxl-0 mt-xl-0 mt-lg-0 mt-md-0 mt-3">
+                <h4>Иванова Инна Ивановна</h4>
+                <ul class="d-flex rating mb-2">
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                </ul>
+                <p class="text-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <a
-                  class="d-flex justify-content-between align-items-center"
-                  href="/"
-                >
-                  <p class="text-4 span mb-0">Читать</p>
-                  <img class="ms-3" src="./img/Icon/arrow.svg" />
-                </a>
               </div>
             </div>
           </div>
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-            <div class="card-new">
-              <img class="w-100 rounded-5" src="./img/img-news.png" />
-              <h5 class="span mt-3">Поддержка Саморегуляции</h5>
-              <div class="d-flex justify-content-between align-items-end">
-                <p class="text-3">
-                  Наше средство стимулирует процессы саморегуляции, помогая вашему
-                  организму восстановить баланс и гармонию, что способствует
-                  вашему общему благополучию.
+          <div class="col-lg-6">
+            <div class="rewiew-card d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-column">
+              <img class="w-100 rounded-4" src="/img/developer.png" />
+              <div class="d-flex flex-column mt-xxl-0 mt-xl-0 mt-lg-0 mt-md-0 mt-3">
+                <h4>Иванова Инна Ивановна</h4>
+                <ul class="d-flex rating mb-2">
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                  <li><img src="/img/Icon/star-fill.svg" /></li>
+                </ul>
+                <p class="text-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <a
-                  class="d-flex justify-content-between align-items-center"
-                  href="/"
-                >
-                  <p class="text-4 span mb-0">Читать</p>
-                  <img class="ms-3" src="./img/Icon/arrow.svg" />
-                </a>
               </div>
             </div>
           </div>
@@ -483,12 +445,14 @@
   </section>
 
   <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/btn-card.js"></script>
-  <script src="./js/btn-save.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/swiper-element-bundle.min.js"></script>
   <script src="./js/swiper-init.js"></script>
   <script src="./js/modal.js"></script>
+  <script src="./js/card-product.js"></script>
+  <script src="./js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+  <script src="./js/card-product.js"></script>
 </body>
 
 </html>
