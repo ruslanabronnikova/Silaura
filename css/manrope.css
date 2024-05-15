@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('Manrope-Bold.eot');
+  src: local('Manrope Bold'), local('Manrope-Bold'),
+    url('../font/Manrope/Manrope-Bold.eot') format('embedded-opentype'),
+    url('../font/Manrope/Manrope-Bold.woff2') format('woff2'),
+    url('../font/Manrope/Manrope-Bold.woff') format('woff'),
+    url('../font/Manrope/Manrope-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('Manrope-Semibold.eot');
+  src: local('Manrope Semibold'), local('Manrope-Semibold'),
+    url('../font/Manrope/Manrope-Regular.eot') format('embedded-opentype'),
+    url('../font/Manrope/Manrope-Regular.woff2') format('woff2'),
+    url('../font/Manrope/Manrope-Regular.woff') format('woff'),
+    url('../font/Manrope/Manrope-Regular.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('Manrope-Regular.eot');
+  src: local('Manrope Regular'), local('Manrope-Regular'),
+    url('../font/Manrope/Manrope-Regular.eot') format('embedded-opentype'),
+    url('../font/Manrope/Manrope-Regular.woff2') format('woff2'),
+    url('../font/Manrope/Manrope-Regular.woff') format('woff'),
+    url('../font/Manrope/Manrope-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('Manrope-Medium.eot');
+  src: local('Manrope Medium'), local('Manrope-Medium'),
+    url('../font/Manrope/Manrope-Medium.eot') format('embedded-opentype'),
+    url('../font/Manrope/Manrope-Medium.woff2') format('woff2'),
+    url('../font/Manrope/Manrope-Medium.woff') format('woff'),
+    url('../font/Manrope/Manrope-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('Manrope-ExtraBold.eot');
+  src: local('Manrope ExtraBold'), local('Manrope-ExtraBold'),
+    url('../font/Manrope/Manrope-ExtraBold.eot') format('embedded-opentype'),
+    url('../font/Manrope/Manrope-ExtraBold.woff2') format('woff2'),
+    url('../font/Manrope/Manrope-ExtraBold.woff') format('woff'),
+    url('../font/Manrope/Manrope-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
