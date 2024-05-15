@@ -659,16 +659,21 @@ h4 {
 }
 
 @media (max-width: 525px) {
+  .breadcrumbs {
+    height: auto;
+    padding: 40px;
+  }
+
   .breadcrumbs img {
     display: none;
   }
 
   .stack-cards__item {
-    padding-bottom: 200%;
+    padding-bottom: 120%;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   h1 {
     font-size: 25px;
   }
@@ -708,5 +713,21 @@ h4 {
   
   .info-img {
     left: 30px;
+  }
+
+  .stack-cards__item {
+    padding-bottom: 140%;
+  }
+}
+
+@media  (max-width: 410px){
+  .stack-cards__item {
+    padding-bottom: 150%;
+  }
+}
+
+@media  (max-width: 350px){
+  .stack-cards__item {
+    padding-bottom: 195%;
   }
 }
