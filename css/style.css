@@ -297,7 +297,7 @@ h4 {
   position: sticky;
   top: var(--space-md);
   height: 0;
-  padding-bottom: 35%;
+  padding-bottom: 40%;
   transform-origin: center top;
   overflow: hidden;
 }
@@ -610,7 +610,6 @@ h4 {
     height: auto;
     padding: 40px 70px;
   }
-
   .card-advant p {
     width: 100%;
   }
@@ -621,13 +620,13 @@ h4 {
   }
 
   .stack-cards__item {
-    padding-bottom: 55%;
+    padding-bottom: 60%;
   }
 }
 
 @media (max-width: 991px) {
   .stack-cards__item {
-    padding-bottom: 75%;
+    padding-bottom: 90%;
   }
 }
 
@@ -663,7 +662,7 @@ h4 {
   }
 
   .stack-cards__item {
-    padding-bottom: 120%;
+    padding-bottom: 200%;
   }
 }
 
@@ -694,6 +693,7 @@ h4 {
 
   .card-advant {
     padding: 40px 40px;
+    height: 500px;
   }
 
   .footer-doc {
@@ -704,4 +704,7 @@ h4 {
     padding: 20px;
   }
   
+  .info-img {
+    left: 30px;
+  }
 }

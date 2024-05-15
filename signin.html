@@ -8,63 +8,41 @@
     <title>Вход</title>
   </head>
 
-  <body
-    class="container-fluid h-100 d-table position-absolute top-0 left-0 right-0 bottom-0 p-0 m-0 overflow-hidden"
-  >
-    <section class="container h-100">
-      <div
-        class="row align-items-center justify-content-center h-100 pb-5 mb-5"
-      >
-        <div class="col-lg-6 d-flex flex-column justify-content-between">
+  <body>
+    <section class="container h-100 mt-5">
+      <div class="row align-items-center justify-content-center pb-5 mb-5">
+        <div class="col-lg-6 d-flex flex-column">
           <div class="d-flex flex-column">
             <h1>Добро пожаловать!</h1>
-            <p class="text-3 mt-3">
-              Заполните данные ниже, чтобы войти в личный кабинет
-            </p>
+            <p class="text-3 mt-3">Заполните данные ниже, чтобы войти в систему</p>
           </div>
-          <form class="needs-validation mt-5" novalidate>
+          <form class="needs-validation mt-3">
             <div class="row g-3">
               <div class="col-sm-12">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email"
-                  required
-                />
+                <input type="email" class="form-control" id="email" placeholder="Email" required />
               </div>
-
+  
               <div class="col-sm-12">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  placeholder="Пароль"
-                  required
-                />
+                <input type="password" class="form-control" id="password" placeholder="Пароль" required />
               </div>
             </div>
           </form>
-          <button
-            class="w-100 button mt-4"
-            type="submit"
-          >
-            Войти в систему
+          <button class="w-100 button mt-4" type="submit" onclick="validateInput()">
+            Войти
           </button>
-          <div
-            class="btns-reg d-flex align-items-center justify-content-between mt-3"
-          >
-            <a href="/sign-in.html">Еще не зарегистрированы?</a>
-            <a href="/reset-password.html">Забыли пароль?</a>
+          <div class="btns-reg d-flex align-items-center justify-content-between mt-3">
+            <a href="/register.html">
+              <p class="text-3">Еще не зарегистрированы?</p>
+            </a>
+            <a href="/reset-password.html">
+              <p class="text-3">Забыли пароль?</p>
+            </a>
           </div>
         </div>
-
         <div class="col-lg-6 mt-xxl-0 mt-xl-0 mt-lg-0 mt-3">
           <img class="w-100 rounded-5" src="./img/img-sign.png" />
         </div>
       </div>
     </section>
-
-    <script src="./js/validate.js"></script>
   </body>
 </html>
