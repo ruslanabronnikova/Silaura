@@ -699,5 +699,9 @@ h4 {
   .footer-doc {
     gap: 5px;
   }
+
+  .back-white {
+    padding: 20px;
+  }
   
 }
