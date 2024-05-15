@@ -396,7 +396,7 @@ h4 {
 /* CATALOG */
 .breadcrumbs {
   background-color: #cdc2ec;
-  background-image: url("../../img/back-breadcumps.svg");
+  background-image: url("../img/back-breadcumps.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
