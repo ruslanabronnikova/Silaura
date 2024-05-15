@@ -57,12 +57,12 @@ saveButtons.forEach(button => {
     // Добавляем обработчик события клика на кнопку
     button.addEventListener('click', () => {
         // Переключаем между изображениями
-        if (saveImage.getAttribute('src') === '/img/Icon/heart-outline.svg') {
+        if (saveImage.getAttribute('src') === './img/Icon/heart-outline.svg') {
             // Если текущее изображение - пустое сердце, заменяем его на закрашенное
-            saveImage.setAttribute('src', '/img/Icon/heart-fill.svg');
+            saveImage.setAttribute('src', './img/Icon/heart-fill.svg');
         } else {
             // Если текущее изображение - закрашенное сердце, заменяем его на пустое
-            saveImage.setAttribute('src', '/img/Icon/heart-outline.svg');
+            saveImage.setAttribute('src', './img/Icon/heart-outline.svg');
         }
     });
 });
