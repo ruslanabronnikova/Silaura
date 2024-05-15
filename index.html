@@ -27,10 +27,6 @@
           <a class="nav-link active" aria-current="page" href="/paymethod.html">Оплата</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Применение
-          </a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/news.html">Статьи </a>
         </li>
         <li class="nav-item">
@@ -40,7 +36,7 @@
 
       <ul class="navbar-btns mb-0 me-5 d-flex">
         <li>
-          <a href="/" class="btn-item">
+          <a href="/save-catalog.html" class="btn-item">
             <img src="./img/Icon/heart-outline.svg" alt="Иконка сердце" />
             <div class="btn-counter">
               <p>0</p>
@@ -71,26 +67,22 @@
     <div class="offcanvas-body">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Продукция</a>
+          <a class="nav-link active" aria-current="page" href="/catalog.html">Продукция</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">О нас</a>
+          <a class="nav-link active" aria-current="page" href="/paymethod.html">Оплата</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Применение
-          </a>
+          <a class="nav-link active" aria-current="page" href="/news.html">Статьи </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Статьи </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Отзывы </a>
+          <a class="nav-link active" aria-current="page" href="/contacts.html">Контакты</a>
         </li>
       </ul>
 
-      <ul class="navbar-btns mb-3 mt-3 d-flex">
+      <ul class="navbar-btns mb-0 me-5 d-flex">
         <li>
-          <a href="/" class="btn-item">
+          <a href="/save-catalog.html" class="btn-item">
             <img src="./img/Icon/heart-outline.svg" alt="Иконка сердце" />
             <div class="btn-counter">
               <p>0</p>
@@ -98,7 +90,7 @@
           </a>
         </li>
         <li>
-          <a href="/" class="btn-item">
+          <a href="/cart.html" class="btn-item">
             <img src="./img/Icon/cart.svg" alt="Иконка корзины" />
             <div class="btn-counter">
               <p>0</p>
@@ -126,10 +118,12 @@
             Линейка продуктов, гармонизирующих и настраивающих энергетические
             центры человека
           </p>
-          <button class="button mt-3 w-100 animate__animated animate__backInUp animate__fast">Перейти в каталог</button>
+          <button class="button mt-3 w-100 animate__animated animate__backInUp animate__fast"
+            onclick="window.open('/catalog.html', '_blank');">В каталог</button>
         </div>
       </div>
-      <swiper-container class="mySwiper col-xxl-7 col-xl-7 col-lg-7 col-md-12 mt-xxl-0 mt-xl-0 mt-lg-0 mt-4 animate__animated animate__backInRight animate__delay-1s"
+      <swiper-container
+        class="mySwiper col-xxl-7 col-xl-7 col-lg-7 col-md-12 mt-xxl-0 mt-xl-0 mt-lg-0 mt-4 animate__animated animate__backInRight animate__delay-1s"
         pagination="true" pagination-dynamic-bullets="true" grab-cursor="true">
         <swiper-slide>
           <div class="container-slider">
@@ -344,8 +338,8 @@
             Гармонизировать центры лучше всего по порядку – продвигаясь
             снизу-вверх – от 1-го до 7-го центра.
           </p>
-          <button class="button align-self-end mt-auto wow animate__animated animate__zoomInUp animate__slow">
-            Перейти в каталог
+          <button class="button align-self-end mt-auto wow animate__animated animate__zoomInUp animate__slow" onclick="window.open('/catalog.html', '_blank');">
+            В каталог
           </button>
         </div>
       </div>
@@ -358,7 +352,8 @@
     <div class="row mt-4 gy-4">
       <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12">
         <ul class="d-flex flex-column">
-          <li class="card-using d-flex flex-column justify-content-between wow animate__animated animate__backInLeft animate__fast">
+          <li
+            class="card-using d-flex flex-column justify-content-between wow animate__animated animate__backInLeft animate__fast">
             <div class="d-flex justify-content-between align-items-center">
               <h4 class="mb-0">Легкость применения</h4>
               <img src="/img/Icon/number-01.svg" />
@@ -368,7 +363,8 @@
               распылите в рот или на лицо 3-5 раз в день или по необходимости.
             </p>
           </li>
-          <li class="card-using d-flex flex-column justify-content-between wow animate__animated animate__backInLeft animate__slow">
+          <li
+            class="card-using d-flex flex-column justify-content-between wow animate__animated animate__backInLeft animate__slow">
             <div class="d-flex justify-content-between align-items-center">
               <h4 class="mb-0">Универсальность применения</h4>
               <img src="/img/Icon/number-02.svg" />
@@ -513,7 +509,7 @@
               организму восстановить баланс и гармонию, что способствует
               вашему общему благополучию.
             </p>
-            <a class="d-flex justify-content-between align-items-center" href="/">
+            <a class="d-flex justify-content-between align-items-center" href="/new-page.html">
               <p class="text-4 span mb-0">Читать</p>
               <img class="ms-3" src="./img/Icon/arrow.svg" />
             </a>
@@ -531,7 +527,7 @@
               организму восстановить баланс и гармонию, что способствует
               вашему общему благополучию.
             </p>
-            <a class="d-flex justify-content-between align-items-center" href="/">
+            <a class="d-flex justify-content-between align-items-center" href="/new-page.html">
               <p class="text-4 span mb-0">Читать</p>
               <img class="ms-3" src="./img/Icon/arrow.svg" />
             </a>
@@ -540,7 +536,7 @@
       </div>
     </div>
     <div class="d-flex justify-content-center mt-4">
-      <button class="button wow animate__animated animate__zoomInUp animate__slow">Смотреть все статьи</button>
+      <button class="button wow animate__animated animate__zoomInUp animate__slow" onclick="window.open('/news.html', '_blank');">Все статьи</button>
     </div>
   </section>
 
