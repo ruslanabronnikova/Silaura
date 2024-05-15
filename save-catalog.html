@@ -11,6 +11,98 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-xl container">
+    <a class="navbar-brand me-5" href="/"><img src="./img/logo.svg" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+      aria-controls="staticBackdrop" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/catalog.html">Продукция</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/paymethod.html">Оплата</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/news.html">Статьи </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/contacts.html">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-btns mb-0 me-5 d-flex">
+        <li>
+          <a href="/save-catalog.html" class="btn-item">
+            <img src="./img/Icon/heart-outline.svg" alt="Иконка сердце" />
+            <div class="btn-counter">
+              <p>0</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/cart.html" class="btn-item">
+            <img src="./img/Icon/cart.svg" alt="Иконка корзины" />
+            <div class="btn-counter">
+              <p>0</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <button class="button-out" onclick="window.open('/signin.html', '_blank');">
+        Войти/Зарегистрироваться
+      </button>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <a class="navbar-brand" href="#"><img src="./img/logo.svg" /></a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/catalog.html">Продукция</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/paymethod.html">Оплата</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/news.html">Статьи </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/contacts.html">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-btns mb-0 me-5 d-flex">
+        <li>
+          <a href="/save-catalog.html" class="btn-item">
+            <img src="./img/Icon/heart-outline.svg" alt="Иконка сердце" />
+            <div class="btn-counter">
+              <p>0</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/cart.html" class="btn-item">
+            <img src="./img/Icon/cart.svg" alt="Иконка корзины" />
+            <div class="btn-counter">
+              <p>0</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <button class="button-out" onclick="window.open('/sign-in.html', '_blank');">
+        Войти/Зарегистрироваться
+      </button>
+    </div>
+  </div>
   <section class="container mt-5 animate__animated animate__backInLeft animate__fast">
     <div class="breadcrumbs d-flex justify-content-between align-items-end">
       <div class="d-flex justify-content-between flex-column">
@@ -291,6 +383,81 @@
       </div>
     </div>
   </section>
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="mb-3">
+            <a href="index.html" class="mb-2"><img src="/img/logo.svg" alt="logo" /></a>
+          </div>
+          <div class="d-flex flex-column">
+            <p class="text-4 mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="text-4">
+              ОГРН 1215000075388 ИНН 5047253969Юр. адрес: 141703, МО, г.
+              Долгопрудный, ул. Якова Гунина, д. 1, пом. 3
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-2">
+          <ul>
+            <li>
+              <h4>Информация</h4>
+            </li>
+            <li><a class="text-4" href="/paymethod.html">Доставка и оплата</a></li>
+            <li><a class="text-4" href="/contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-2">
+          <ul>
+            <li>
+              <h4>О компании</h4>
+            </li>
+            <li><a class="text-4" href="/catalog.html">Продукция</a></li>
+            <li><a class="text-4" href="/news.html">Блог</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-2">
+          <ul>
+            <li>
+              <h4>Контакты</h4>
+            </li>
+            <li>
+              <p class="text-4"><span>e-mail:</span> Info@mai.ru</p>
+            </li>
+            <li>
+              <p class="text-4"><span>Телефон:</span> +7 999 999 99 99</p>
+            </li>
+            <li>
+              <p class="text-4">
+                <span>Время работы:</span> ПН-ПТ: 09:00-17:00 СБ-ВС: Выходной
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <ul
+            class="footer-doc d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-column justify-content-end">
+            <li class="mr-4">
+              <a class="text-4" href="#">Обработка персональных данных</a>
+            </li>
+            <li class="mr-4">
+              <a class="text-4" href="#">Политика конфиденциальности </a>
+            </li>
+            <li><a class="text-4" href="#">Оферта</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/card-product.js"></script>
