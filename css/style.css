@@ -605,6 +605,9 @@ h4 {
 }
 
 @media (max-width: 1199px) {
+  h1 {
+    font-size: 45px;
+  }
   .card-advant {
     flex-direction: column;
     height: auto;

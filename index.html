@@ -122,25 +122,19 @@
             onclick="window.open('/catalog.html', '_blank');">В каталог</button>
         </div>
       </div>
-      <swiper-container
-        class="mySwiper col-xxl-7 col-xl-7 col-lg-7 col-md-12 mt-xxl-0 mt-xl-0 mt-lg-0 mt-4 animate__animated animate__backInRight animate__delay-1s"
-        pagination="true" pagination-dynamic-bullets="true" grab-cursor="true">
-        <swiper-slide>
-          <div class="container-slider">
-            <div class="info-img">
-              <h4 class="span">1-й центр</h4>
-              <p class="text-3">Жизненная энергия, тонус, либидо.</p>
-              <a class="d-flex justify-content-end align-items-center" href="/">
-                <p class="text-4 span mb-0">Смотреть</p>
-                <img class="ms-3" src="./img/Icon/arrow.svg" />
-              </a>
-            </div>
-            <img class="w-100 rounded-5" src="/img/main-img.png" />
+      <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 mt-xxl-0 mt-xl-0 mt-lg-0 mt-4 animate__animated animate__backInRight animate__delay-1s">
+        <div>
+          <div class="info-img">
+            <h4 class="span">1-й центр</h4>
+            <p class="text-3">Жизненная энергия, тонус, либидо.</p>
+            <a class="d-flex justify-content-end align-items-center" href="/">
+              <p class="text-4 span mb-0">Смотреть</p>
+              <img class="ms-3" src="./img/Icon/arrow.svg" />
+            </a>
           </div>
-        </swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-      </swiper-container>
+          <img class="w-100 rounded-5" src="/img/main-img.png" />
+        </div>
+      </div>
     </div>
   </section>
 
@@ -511,7 +505,7 @@
     <h2 class="wow animate__animated animate__backInLeft animate__fast">Научные статьи</h2>
 
     <div class="row gy-4 mt-4 wow animate__animated animate__fadeInUpBig animate__slow">
-      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12 mt-0">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
         <div class="card-new">
           <img class="w-100 rounded-5" src="./img/img-news.png" />
           <h4 class="span mt-3">Поддержка Саморегуляции</h4>
@@ -764,9 +758,6 @@
     </div>
   </footer>
 </body>
-<script src="./js/swiper-bundle.min.js"></script>
-<script src="./js/swiper-element-bundle.min.js"></script>
-<script src="./js/swiper-init.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/wow.min.js"></script>
 <script>new WOW().init();</script>
